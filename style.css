@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Fredoka One", sans-serif;
 }
 
 .container {
@@ -14,7 +17,38 @@
 
 h1 {
   color: #fff;
-  margin-top: 20px;
+  margin: 20px 0;
+}
+
+.form {
+  background-color: #475569;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  border-radius: 10px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+label {
+  color: #fff;
+}
+
+#player-one-name,
+#player-two-name {
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 0;
+  margin-top: 5px;
+}
+
+.player-two {
+  grid-column: 3 / 4;
 }
 
 .game-board {
@@ -34,23 +68,18 @@ h1 {
   font-size: 38px;
 }
 
-.buttons {
-  display: flex;
-  width: 300px;
-  justify-content: space-evenly;
-  margin-top: 20px;
-}
-
 .btn {
+  grid-column: 2 / 3;
   width: 100px;
   padding: 5px 0;
+  margin-top: 10px;
   border: none;
   border-radius: 20px;
 }
 
 .btn:hover {
   cursor: pointer;
-  box-shadow: 0px 0px 10px #6b7280;
+  box-shadow: 0px 0px 10px #94a3b8;
   font-weight: bold;
 }
 
